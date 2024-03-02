@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import { FlatList, StyleSheet, Text, View } from 'react-native';
-import DayListItem from './src/components/core/DayListItem';
+import DayListItem from '../../src/components/core/DayListItem';
 import { useFonts, Inter_900Black } from '@expo-google-fonts/inter';
 import * as SplashScreen from 'expo-splash-screen';
 import { useEffect } from 'react';
@@ -8,7 +8,7 @@ import { AmaticSC_700Bold, AmaticSC_400Regular } from '@expo-google-fonts/amatic
 
 SplashScreen.preventAutoHideAsync()
 
-export default function App() {
+export default function HomePage() {
 
   const [fontsLoaded, fontError] = useFonts({
     Inter: Inter_900Black,
